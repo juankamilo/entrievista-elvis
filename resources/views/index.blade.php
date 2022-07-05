@@ -55,6 +55,7 @@
         @else
             @if(isset($error))
                 <p class="text-danger">{{ $error }}</p>
+                <a href="/">Regresar</a>
             @else
                 <h3>No hay ninguna busqueda reciente</h3>
             @endif
