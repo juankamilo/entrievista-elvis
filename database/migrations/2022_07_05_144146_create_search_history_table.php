@@ -16,7 +16,9 @@ return new class extends Migration
         Schema::create('search_history', function (Blueprint $table) {
             $table->id();
             $table->string('competition_id')->nullable()->default(null);
+            $table->string('competition_name')->nullable()->default(null);
             $table->integer('matchday')->nullable()->default(null);
+            $table->string('winner')->nullable()->default(null);
             $table->timestamps();
         });
     }
