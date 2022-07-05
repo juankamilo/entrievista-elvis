@@ -12,10 +12,10 @@
     <div class="container pt-4">
         <h1>Football Data App</h1>
 
-        <form action="">
-            <select name="" id="" class="form-control mb-4">
-                <option>Bundesliga</option>
-                <option>La Liga</option>
+        <form action="{{ route('search') }}" method="POST">
+            <select name="select-competition" class="form-control mb-4">
+                <option value="CL">Champions League</option>
+                <option value="PL">Premier League</option>
             </select>
 
             <input type="submit" class="btn btn-primary w-100 mb-5" value="Buscar" />
